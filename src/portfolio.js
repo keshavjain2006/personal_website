@@ -281,25 +281,30 @@ const openSource = {
 // Some big projects you have worked on
 
 const research = {
-  title: "Research",
-  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
+  title: emoji("Achievements And Certifications 🏆 "),
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+
+  achievementsCards: [
     {
+      title: "Lumiere Research Scholar",
+      subtitle:
+        "As a Lumiere Research Scholar, I investigated the accuracy and efficiency of Support Vector Machine (SVM) and Decision Tree (DT) algorithms in predicting the probability of cardiovascular diseases. This expanded my understanding of machine learning techniques and the mathematical basis of SVM and DT algorithms. I submitted my research paper to the National High School Journal of Science for publication, and it is currently under review.",
       image: require("./assets/images/lumiere_education_logo.jpeg"),
-      projectName: "Lumiere Research Scholar",
-      projectDesc: "As a Lumiere Research Scholar, I investigated the accuracy and efficiency of Support Vector Machine (SVM) and Decision Tree (DT) algorithms in predicting the probability of cardiovascular diseases. This expanded my understanding of machine learning techniques and the mathematical basis of SVM and DT algorithms. I submitted my research paper to the National High School Journal of Science for publication, and it is currently under review",
+      imageAlt: "Lumiere Education Logo",
       footerLink: [
         {
           name: "Research Paper",
           url: "https://docs.google.com/document/d/1pAST9aAILgLdOvwcgenZKWhcp5CDsej9/edit?usp=sharing&ouid=103833402836735569234&rtpof=true&sd=true"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
+      title: "Published Research",
+      subtitle:
+      "My research paper, published in the International Organization of Scientific Research - Journal of Computer Engineering, evaluated Naïve-Bayes Algorithm and Multi-Layer Perceptron for predicting heart diseases. This deepened my knowledge of these algorithms and involved advanced machine learning concepts like confusion matrix, entropy, accuracy, and efficiency analysis.",
       image: require("./assets/images/iosr_logo.jpeg"),
-      projectName: "Published Research",
-      projectDesc: "My research paper, published in the International Organization of Scientific Research - Journal of Computer Engineering, evaluated Naïve-Bayes Algorithm and Multi-Layer Perceptron for predicting heart diseases. This deepened my knowledge of these algorithms and involved advanced machine learning concepts like confusion matrix, entropy, accuracy, and efficiency analysis.",
+      imageAlt: "IOSR Journal Logo",
       footerLink: [
         {
           name: "Research Paper",
@@ -310,7 +315,7 @@ const research = {
           url: "https://www.iosrjournals.org/iosr-jce/pages/25(5)Series-2.html"
         }
       ]
-    }
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
