@@ -492,6 +492,14 @@ const achievementSection = {
         {
           name: "Participation Certificate",
           url: "https://drive.google.com/file/d/1SVDh6bwJsdoUZ7apiVhPPUvY_x0RGgMj/view?usp=sharing"
+        },
+        {
+          name: "Proposal Video",
+          url: "https://drive.google.com/drive/folders/1aXO4pv_ULIKycGZ0fLdmKXoHs0nIsWMh?usp=sharing"
+        },
+        {
+          name: "Written Experiment Proposal",
+          url: "https://drive.google.com/file/d/1dqPxpPtFYifjY2hynoLrcoP5Y0CyJV6U/view?usp=sharing"
         }
       ]
     }
@@ -643,8 +651,8 @@ const otherActivitiesSection = {
     },
 
     {
-      title: "Vice Captain, Jayshree Periwal International School, IBSO National Team & Jayshree Periwal Sports League",
-      subtitle: "Vice Captain of the Basketball team at Jayshree Periwal International School and a key member of the IBSO National Team, I demonstrated exceptional leadership and game sense over 7 years. This resulted in our team winning 5 district championships and 2 State titles. Additionally, I earned 8 accolades in JPSL, showcasing my skill and dedication to the sport.",
+      title: "Vice Captain, Jayshree Periwal International School, ISSO National Team & Jayshree Periwal Sports League",
+      subtitle: "Vice Captain of the Basketball team at Jayshree Periwal International School and a key member of the ISSO National Team, I demonstrated exceptional leadership and game sense over 7 years. This resulted in our team winning 5 district championships and 2 State titles. Additionally, I earned 8 accolades in JPSL, showcasing my skill and dedication to the sport.",
       image: require("./assets/images/jpis.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [

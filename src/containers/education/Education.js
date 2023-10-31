@@ -19,41 +19,6 @@ export default function Education() {
             <EducationCard key={index} school={school} />
           ))}
         </div>
-        <Fade bottom duration={1000} distance="20px">
-          {/* <div className="education-card-container"> */}
-          {/* <div className="main" id="achievements"> */}
-          <div className="achievement-main-div" id="online">
-            {/* <div className="achievement-header"> */}
-            <h1
-              className={
-                isDark
-                  ? "dark-mode heading achievement-heading"
-                  : "heading achievement-heading"
-              }
-            >
-              Online Courses
-            </h1>
-            {/* </div> */}
-          </div>
-          <div className="achievement-cards-div">
-            {onlineCoursesSection.onlineCoursesCards.map((card, i) => {
-              return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    footer: card.footerLink
-                  }}
-                />
-              );
-            })}
-            {/* </div> */}
-          </div>
-        </Fade>
       </div>
       // </div>
       // </div>

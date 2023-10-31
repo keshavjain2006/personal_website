@@ -13,6 +13,7 @@ import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
+import OnlineCourses from "./onlineCourses/OnlineCourses";
 import Clubs from "./clubs/Clubs";
 import OtherActivities from "./otherActivities/OtherActivities";
 import ScrollToTopButton from "./topbutton/Top";
@@ -65,6 +66,7 @@ const Main = () => {
             <Projects />
             <OtherActivities />
             <Achievement />
+            <OnlineCourses />
             <Blogs />
             {/* <Talks /> */}
             {/* <Twitter /> */}

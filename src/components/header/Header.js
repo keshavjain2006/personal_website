@@ -38,11 +38,11 @@ function Header() {
               <a href="#education">Education</a>
             </li>
           )}
-          {  (
+          {/* {  (
             <li>
               <a href="#online">Online Courses</a>
             </li>
-          )}
+          )} */}
           { (
             <li>
               <a href="#research">Research</a>
@@ -68,14 +68,14 @@ function Header() {
               <a href="#community">Community Service</a>
             </li>
           )}
-          { (
+          {/* { (
             <li>
               <a href="#other">Other Activities</a>
             </li>
-          )}
+          )} */}
           { (
             <li>
-              <a href="#honors">Honors & Awards</a>
+              <a href="#honors">Awards</a>
             </li>
           )}
           { (
@@ -83,9 +83,9 @@ function Header() {
               <a href="#media">Media Coverages</a>
             </li>
           )}
-          <li>
+          {/* <li>
             <a href="#contact">Contact Me</a>
-          </li>
+          </li> */}
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
