@@ -21,7 +21,7 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="clearvision">
+    <div className={isDark ? "dark-mode main" : "main"} id="jobility">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">

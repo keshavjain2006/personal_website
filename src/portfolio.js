@@ -23,10 +23,10 @@ const greeting = {
   username: "Keshav Jain",
   title: "Hey, I'm Keshav",
   subTitle: emoji(
-    "A motivated high school student, Computer Science enthusiast, machine learning researcher and web developer who wants to harness technology for social impact."
+    "Aspiring tech enthusiast and sports aficionado . Dedicated to crafting innovative solutions to create positive change for both present and future generations."
   ),
   resumeLink:
-    "https://docs.google.com/document/d/1pqYT0CTgKxb_1Yv6s0NhNH2LoazbyATW/edit?usp=sharing&ouid=103833402836735569234&rtpof=true&sd=true", // Set to empty to hide the button
+    "https://drive.google.com/drive/folders/1s49G_g2eobZY8vZi7X-8iRbGJv-dWPMz?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,18 +49,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "ClearVision",
+  title: "Jobility",
   // subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Developed a project utilizing OpenCV, OCR, and AI technology for text scanning, with audio transformation using Scapy and other libraries",
+      "⚡ An AI-driven platform designed to connect Persons with Disability (PWDs) to suitable employers, enhancing job accessibility and inclusion",
     ),
-    emoji("⚡ Incorporated zoom functionality for enhanced accessibility, aiming to facilitate comprehensive newspaper reading for the visually impaired"),
     emoji(
-      "⚡ Completed first prototype; planning for the second version with object recognition"
+      "⚡ Features tailored job recommendations through Deep Learning, real-time speech-to-text for profile updates, and an Employee Leaderboard highlighting PWD-friendly companies"
+      ),
+    emoji(
+      "⚡ Aims to bridge the employment gap for PWDs, leveraging technology for more accessible and informed job matching"
     )
   ],
-  githubLink: "https://github.com/kj12354/ClearVision",
+  githubLink: "https://github.com/keshavjain2006/Jobility",
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -215,15 +217,11 @@ const clubs = {
       // date: "June 2018 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "OpenCV and YOLO: Explored advanced techniques in OpenCV and YOLO for computer vision applications; Studied real-time object detection system using YOLOv3. Developed a project which uses object recognition to control laptop's mouse/cursor using hand movements.",
+        "Programming Techniques: (i) Deep Learning and AI: Learned utilising Pytorch framework for building deep learning models; (ii) Full-Stack Web Development: Developing skills in React, Pycharm, Flask, Javascript for programming",
         "Multilanguage Coding Projects: Implemented multiple projects using Python, HTML, CSS, and JavaScript; Developed various small coding projects like calculator, to-do list, daily journal using those languages",
         "Leadership and AI Research: Held discussions on developments in the AI space. Mentored a research group in machine learning research; Published a paper on machine learning in healthcare with my colleagues - published in IOSR journal (see 'Research' section above)"
       ],
       footer: [
-        {
-          name: "OpenCV Project Github",
-          url: "https://github.com/keshavjain2006/VirtualMouse",
-        },
         {
           name: "Physics Calculator Github",
           url: "https://github.com/keshavjain2006/PhysicsCalculator"
@@ -302,7 +300,7 @@ const research = {
     {
       title: "Published Research",
       subtitle:
-      "My research paper, published in the International Organization of Scientific Research - Journal of Computer Engineering, evaluated Naïve-Bayes Algorithm and Multi-Layer Perceptron for predicting heart diseases. This deepened my knowledge of these algorithms and involved advanced machine learning concepts like confusion matrix, entropy, accuracy, and efficiency analysis.",
+        "My research paper, published in the International Organization of Scientific Research - Journal of Computer Engineering, evaluated Naïve-Bayes Algorithm and Multi-Layer Perceptron for predicting heart diseases. This deepened my knowledge of these algorithms and involved advanced machine learning concepts like confusion matrix, entropy, accuracy, and efficiency analysis.",
       image: require("./assets/images/iosr_logo.jpeg"),
       imageAlt: "IOSR Journal Logo",
       footerLink: [
@@ -421,15 +419,28 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Bronze Medal, Philippine International Math and Science Olympics",
+      title: "Top 5 nationally, Philippine International Math and Science Olympics",
       subtitle:
-        "Ranked Top 5 nationally. PIMSO, by ICE (International Champions in Education), is a prestigious international academic competition designed to promote and celebrate excellence in mathematics and science. This annual event provides a platform for young talents to showcase their problem-solving abilities, critical thinking skills, and scientific knowledge on an international stage.",
+        "Ranked Top 5 in India and received a bronze medal. PIMSO, by ICE (International Champions in Education), is a prestigious international academic competition designed to promote and celebrate excellence in mathematics and science. This annual event provides a platform for young talents to showcase their problem-solving abilities, critical thinking skills, and scientific knowledge on an international stage.",
       image: require("./assets/images/pimso.jpeg"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "National Round Results",
           url: "https://drive.google.com/drive/folders/1OteUR3ykg0tXgUc1qROyeB712BmRq3aT?usp=sharing"
+        }
+      ]
+    },
+    {
+      title: "Top 12 nationally, Thailand International Mathematical Olympiad",
+      subtitle:
+        "Ranked Top 12 in India and received a silver medal, Thailand International Mathematics Olympiad is an annual Mathematical Olympiad competition organised by the Thailand Mathematics Society. TIMO consists of 5 main topics: Logical Thinking, Arithmetic / Algebra, Number Theory, Geometry & Combinatorics.",
+      image: require("./assets/images/TIMO_Logo.png"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "National Round Results",
+          url: "https://drive.google.com/drive/folders/19UGhs9dmQg3lDVjAmu91Q5cfi2PI4lin?usp=sharing"
         }
       ]
     },
@@ -445,8 +456,9 @@ const achievementSection = {
           url: "https://activities.tjhsst.edu/physics/olympiad/"
         }
       ]
-    },
-
+    }
+  ],
+  achievementsCards2: [
     {
       title: "2nd Position, SpaceHack",
       subtitle: "National-level hackathon where participants combine aerospace technology and computer science to create applications that demonstrate the best use of research and creativity. Conducted by Aerospace Society of DPS RK Puram. Sponsored by University of Arizona.",
@@ -459,21 +471,7 @@ const achievementSection = {
         },
       ]
     }
-  ],
-  achievementsCards2: [
-    {
-      title: "2nd Position, Cosmoverse",
-      subtitle:
-        "National-level research competition where participants design a competent, viable and creative permanent settlement according to given parameters. Conducted by Aerospace Society of DPS RK Puram. Sponsored by University of Arizona.",
-      image: require("./assets/images/cosmoverse.png"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Research Paper",
-          url: "https://docs.google.com/document/d/1eaYN_gheQ7QhMQK2hOzXqRoJ4Yvrj21Z66f3yRN68WY/edit"
-        }
-      ]
-    },
+    ,
     {
       title: "Excellence in Co-Curricular (Top 3% of class)",
       subtitle:
