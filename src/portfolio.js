@@ -320,15 +320,6 @@ const projectsSection = {
       ]
     },
     {
-      role: "Portfolio Performance Analysis",
-      company: "Python · Pandas · NumPy · Matplotlib",
-      descBullets: [
-        "Built an end-to-end pipeline to ingest, clean, and analyze historical stock and portfolio data.",
-        "Computed key performance metrics including Sharpe ratio, alpha, beta, and drawdown to evaluate portfolio risk-adjusted returns.",
-        "Visualized portfolio performance over time with interactive charts for benchmarking against market indices."
-      ]
-    },
-    {
       role: "Gear Motor Selection & Control Optimization",
       company: "ODrive Robotics · PID Control · Motor Testing",
       descBullets: [
