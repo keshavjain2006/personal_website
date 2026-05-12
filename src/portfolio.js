@@ -23,7 +23,7 @@ const greeting = {
   username: "Keshav Jain",
   title: "Hey, I'm Keshav",
   subTitle: emoji(
-    "Aspiring tech enthusiast and sports aficionado . Dedicated to crafting innovative solutions to create positive change for both present and future generations."
+    "A Computer Science and Data Science student at UW-Madison 🎓 Passionate about building intelligent systems, ML pipelines, and impactful software."
   ),
   resumeLink:
     "https://drive.google.com/drive/folders/1s49G_g2eobZY8vZi7X-8iRbGJv-dWPMz?usp=sharing", // Set to empty to hide the button
@@ -35,34 +35,24 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/keshavjain2006",
   linkedin: "https://www.linkedin.com/in/keshav-jain-baaa23240",
-  gmail: "keshukeshavjain@gmail.com",
+  gmail: "kjain45@wisc.edu",
   instagram: "https://www.instagram.com/keshavjain90/",
-  //gitlab: "https://gitlab.com/saadpasta",
-  //facebook: "https://www.facebook.com/saad.pasta7",
-  //medium: "https://medium.com/@saadpasta",
-  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "Jobility",
-  // subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "Technical Skills",
+  subTitle: "",
   skills: [
+    emoji("💻 Languages: Java, Python, C/C++, JavaScript, SQL, HTML/CSS, R"),
     emoji(
-      "⚡ An AI-driven platform designed to connect Persons with Disability (PWDs) to suitable employers, enhancing job accessibility and inclusion",
+      "🌐 Infra & Web: AWS, Docker, Prometheus, Grafana, React, Flask, Node.js, Express.js, Git, Bash"
     ),
-    emoji(
-      "⚡ Features tailored job recommendations through Deep Learning, real-time speech-to-text for profile updates, and an Employee Leaderboard highlighting PWD-friendly companies"
-      ),
-    emoji(
-      "⚡ Aims to bridge the employment gap for PWDs, leveraging technology for more accessible and informed job matching"
-    )
+    emoji("🤖 Data & ML: PyTorch, NumPy, OpenCV, Vector DBs, LLM APIs")
   ],
-  githubLink: "https://github.com/keshavjain2006/Jobility",
+  githubLink: "https://github.com/keshavjain2006",
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -73,16 +63,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-opencv"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
+      skillName: "javascript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "html5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
       skillName: "reactjs",
@@ -93,32 +87,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "r-language",
+      fontAwesomeClassname: "fab fa-r-project"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -130,10 +116,18 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
+      schoolName: "University of Wisconsin-Madison",
+      subHeader: "Bachelor of Science in Computer Science and Data Science",
+      duration: "September 2024 – May 2027",
+      desc: "GPA: 3.74",
+      descBullets: [
+        "Relevant Coursework: Object-Oriented Programming, Data Structures and Algorithms, Linear Algebra, Data Science Modeling, Discrete Mathematics, Introduction to Computer Engineering"
+      ]
+    },
+    {
       schoolName: "Jayshree Periwal International School",
       logo: require("./assets/images/jpis.jpeg"),
       subHeader: "IGCSE",
-      //duration: "September 2017 - April 2019",
       desc: "Grade X Board Exam Results:",
       descBullets: [
         "Economics- A*",
@@ -171,17 +165,21 @@ const techStack = {
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
-// Work experience section
+// Work Experience Section
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineering Intern",
-      company: "Tweaking Technologies Pvt Ltd",
+      company: "Tweaking Technologies",
       companylogo: require("./assets/images/tweaking.jpeg"),
-      // date: "June 2018 – Present",
-      desc: "I contributed to the development of an antivirus mobile application to defend against virus, malware and ransomware. I collaborated with frontend engineers and contributed in creating an intuitive and user-friendly interface for the mobile app, allowing users to configure settings and view scan results. I implemented a user feedback system for users to report issues and providing feedback, which can inform future updates and improvements to the application. I developed a system for logging scan results and generating reports for users, which can aid in troubleshooting and decision-making.",
+      date: "May 2025 – Aug 2025",
+      descBullets: [
+        "Collaborated with 5 frontend engineers to create an intuitive and user-friendly interface for the mobile app, resulting in a 20% increase in user satisfaction based on post-release surveys.",
+        "Implemented a feedback system for users to report issues, collecting over 300 user responses within the first month, which directly informed 3 key feature updates.",
+        "Developed a logging system to record scan results and generate reports, reducing troubleshooting time by 35% and increasing decision-making accuracy by 40% based on internal metrics."
+      ],
       footer: [
         {
           name: "Antivirus Software",
@@ -193,19 +191,18 @@ const workExperiences = {
       role: "Engineering Virtual Program",
       company: "Goldman Sachs",
       companylogo: require("./assets/images/goldman.png"),
-      // date: "May 2017 – May 2018",
-      desc: "During my tenure in the Goldman Sachs Engineering Virtual Program, I immersed myself in the intricacies of cybersecurity. I proactively delved into hacking techniques, scrutinized password security methodologies, and put my skills to the test by attempting to crack 20 passwords with an array of tools. In a notable display of initiative, I drafted an email to my supervisor, proposing specific improvements to existing control measures. This experience not only expanded my knowledge of cyber threats but also honed my problem-solving abilities in the realm of information security.",
+      desc: "During my tenure in the Goldman Sachs Engineering Virtual Program, I immersed myself in the intricacies of cybersecurity. I proactively delved into hacking techniques, scrutinized password security methodologies, and put my skills to the test by attempting to crack 20 passwords with an array of tools. In a notable display of initiative, I drafted an email to my supervisor, proposing specific improvements to existing control measures.",
       footer: [
         {
           name: "Certificate",
-          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_A3mL2v7YJRQbCMy9R_1655411549649_completion_certificate.pdf",
+          url: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Goldman%20Sachs/NPdeQ43o8P9HJmJzg_Goldman%20Sachs_A3mL2v7YJRQbCMy9R_1655411549649_completion_certificate.pdf"
         }
       ]
-    },
+    }
   ]
 };
 
-// Work experience section
+// Clubs section
 
 const clubs = {
   display: true, //Set it to true to show workExperiences Section
@@ -214,8 +211,6 @@ const clubs = {
       role: "InnovateX",
       company: "President",
       companylogo: require("./assets/images/innovatex.png"),
-      // date: "June 2018 – Present",
-      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Programming Techniques: (i) Deep Learning and AI: Learned utilising Pytorch framework for building deep learning models; (ii) Full-Stack Web Development: Developing skills in React, Pycharm, Flask, Javascript for programming",
         "Multilanguage Coding Projects: Implemented multiple projects using Python, HTML, CSS, and JavaScript; Developed various small coding projects like calculator, to-do list, daily journal using those languages",
@@ -236,7 +231,7 @@ const clubs = {
         },
         {
           name: "Instagram Handle",
-          url: "https://www.instagram.com/innovatex.jpis/",
+          url: "https://www.instagram.com/innovatex.jpis/"
         }
       ]
     },
@@ -244,16 +239,11 @@ const clubs = {
       role: "Knowverse",
       company: "Co-founder",
       companylogo: require("./assets/images/knowverse.png"),
-      // date: "May 2017 – May 2018",
-      desc: "Knowverse, a venture I co-founded, revolutionizes learning through interactive content. Leading a team of 20 tutors, we produce specialized educational videos covering a diverse range of subjects, tailored for children's enrichment. The platform encourages exploration of concepts, from electrons to galaxies, ensuring a thorough understanding of every nuance. Additionally, we conduct sessions, weekly assignments, and offer intriguing research topics. Knowverse goes beyond conventional learning, providing practical, career-oriented courses as proficiency grows. Internships, research papers, and experiments offer a direct path to career aspirations, eliminating monotony.",
-      // descBullets: [
-      //   "Knowverse is a platform for students to enhance their learning experience through interactive content and resources",
-      //   "Led 20+ tutors in creating educational videos for kids."
-      // ],
+      desc: "Knowverse, a venture I co-founded, revolutionizes learning through interactive content. Leading a team of 20 tutors, we produce specialized educational videos covering a diverse range of subjects, tailored for children's enrichment. The platform encourages exploration of concepts, from electrons to galaxies, ensuring a thorough understanding of every nuance. Additionally, we conduct sessions, weekly assignments, and offer intriguing research topics.",
       footer: [
         {
           name: "Discord Server",
-          url: "https://discord.gg/vrWSyXr6",
+          url: "https://discord.gg/vrWSyXr6"
         },
         {
           name: "Instagram Handle",
@@ -264,7 +254,7 @@ const clubs = {
           url: "https://docs.google.com/presentation/d/1gA48pUEPsIz4V4HBfHad_B1uGxhYa3a7ldp9V_eSrwk/edit?usp=sharing"
         }
       ]
-    },
+    }
   ]
 };
 
@@ -276,77 +266,87 @@ const openSource = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Some big projects you have worked on
+// Research Experience Section
 
 const research = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
+  display: true,
+  experience: [
     {
-      title: "Lumiere Research Scholar",
-      subtitle:
-        "As a Lumiere Research Scholar, I investigated the accuracy and efficiency of Support Vector Machine (SVM) and Decision Tree (DT) algorithms in predicting the probability of cardiovascular diseases. This expanded my understanding of machine learning techniques and the mathematical basis of SVM and DT algorithms. I submitted my research paper to the National High School Journal of Science for publication, and it is currently under review.",
-      image: require("./assets/images/lumiere_education_logo.jpeg"),
-      imageAlt: "Lumiere Education Logo",
-      footerLink: [
-        {
-          name: "Research Paper",
-          url: "https://docs.google.com/document/d/1pAST9aAILgLdOvwcgenZKWhcp5CDsej9/edit?usp=sharing&ouid=103833402836735569234&rtpof=true&sd=true"
-        }
+      role: "Undergraduate Research Assistant",
+      company: "University of Wisconsin-Madison",
+      date: "Sep 2025 – Dec 2025",
+      descBullets: [
+        "Analyzed LLM reasoning behavior using Graph-of-Thought (GoT) and Tree-of-Thought (ToT) frameworks to study strategy formation and generalization.",
+        "Co-developed a trajectory-based framework to map reasoning paths and built an interactive visualization tool to render trajectory trees.",
+        "Researched strategy collapse in RL-trained LLMs, focusing on the trade-off between exploratory and transformative generalization, in Wisconsin Institute For Discovery's Nowak Group."
       ]
     },
     {
-      title: "Published Research",
-      subtitle:
-        "My research paper, published in the International Organization of Scientific Research - Journal of Computer Engineering, evaluated Naïve-Bayes Algorithm and Multi-Layer Perceptron for predicting heart diseases. This deepened my knowledge of these algorithms and involved advanced machine learning concepts like confusion matrix, entropy, accuracy, and efficiency analysis.",
-      image: require("./assets/images/iosr_logo.jpeg"),
-      imageAlt: "IOSR Journal Logo",
-      footerLink: [
+      role: "Lumiere Research Scholar & Researcher",
+      company: "Lumiere Education | IOSR Journal Publication",
+      companylogo: require("./assets/images/lumiere_education_logo.jpeg"),
+      date: "May 2024 – Aug 2024",
+      descBullets: [
+        "Conducted research comparing SVM and Decision Tree algorithms; achieved accuracy of 85% (SVM) and 80% (DT) evaluating 5,000 patient records.",
+        "Published: \"Accuracy of Naive-Bayes and MLP in Predicting Heart Diseases,\" achieving 82% accuracy using Multi-Layer Perceptron on 6,500 records."
+      ],
+      footer: [
         {
           name: "Research Paper",
           url: "https://www.iosrjournals.org/iosr-jce/papers/Vol25-issue5/Ser-2/J2505025257.pdf"
         },
         {
-          name: "IOSR-JCE Series 2, Last Entry",
+          name: "IOSR-JCE Series 2",
           url: "https://www.iosrjournals.org/iosr-jce/pages/25(5)Series-2.html"
         }
       ]
-    },
-  ],
-  display: true // Set false to hide this section, defaults to true
+    }
+  ]
 };
+
+// Projects Section
+
+const projectsSection = {
+  display: true,
+  projects: [
+    {
+      role: "Brain To Text Decoder",
+      company: "Python · NumPy · Pandas · Matplotlib",
+      descBullets: [
+        "Developed a brain–computer interface model to decode attempted speech from 512-channel neural signals into phoneme sequences.",
+        "Analyzed and preprocessed 512-channel neural recordings; applied PCA to reduce dimensionality by 25% while retaining 95% variance, improving model training throughput and stability.",
+        "Designed and evaluated a CNN–RNN hybrid architecture for neural time-series to phoneme decoding, implementing an end-to-end experimental pipeline.",
+        "Demonstrates real-world applicability of machine learning for assistive communication technologies for individuals with speech or motor impairments."
+      ]
+    },
+    {
+      role: "Portfolio Performance Analysis",
+      company: "Python · Pandas · NumPy · Matplotlib",
+      descBullets: [
+        "Built an end-to-end pipeline to ingest, clean, and analyze historical stock and portfolio data.",
+        "Computed key performance metrics including Sharpe ratio, alpha, beta, and drawdown to evaluate portfolio risk-adjusted returns.",
+        "Visualized portfolio performance over time with interactive charts for benchmarking against market indices."
+      ]
+    },
+    {
+      role: "Gear Motor Selection & Control Optimization",
+      company: "ODrive Robotics · PID Control · Motor Testing",
+      descBullets: [
+        "Researched 100+ DC brushless motors and selected the most cost-effective option meeting torque, RPM, mass & volume constraints.",
+        "Validated motor performance using ODrive Robotics; fixed wiring issues causing 15% failures in early testing.",
+        "Optimized mechanical and electrical integration to improve torque/RPM efficiency by 20%.",
+        "Tuned PID control loops to improve robotic arm response time by 18%."
+      ]
+    }
+  ]
+};
+
+// Legacy work experience object (kept for export compatibility)
 
 const workExperience = {
   title: "Work Experience",
-  // subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/tweaking.jpeg"),
-      projectName: "Software Engineering Intern, Tweaking Technologies Pvt Lt",
-      projectDesc: "Research question: 'To what extent is the comparative accuracy and efficiency of Support Vector Machine (SVM) and Decision Tree(DT) algorithms in cardiovascular diseases?' Learned 3 different types of machine learning techniques and also the mathematical reasoning behind SVM and DT algorithms. Submitted research paper to the National High School Journal of Science for publication, currently under review",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/goldman.png"),
-      projectName: "Engineering Virtual Program, Goldman Sachs ",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
+  projects: [],
+  display: false
 };
 
 // Education Section
@@ -360,8 +360,7 @@ const onlineCoursesSection = {
   onlineCoursesCards: [
     {
       title: "The Complete Python Bootcamp From Zero to Hero in Python",
-      subtitle:
-        "-Udemy",
+      subtitle: "-Udemy",
       image: require("./assets/images/python.png"),
       imageAlt: "Python Logo",
       footerLink: [
@@ -369,20 +368,11 @@ const onlineCoursesSection = {
           name: "Certificate",
           url: "http://ude.my/UC-db55218a-5180-4f4a-9e28-3ae1b24771b1"
         }
-        // {
-        //   name: "Award Letter",
-        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        // },
-        // {
-        //   name: "Google Code-in Blog",
-        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        // }
       ]
     },
     {
       title: "The Complete 2020 Web Development Bootcamp",
-      subtitle:
-        "-Udemy",
+      subtitle: "-Udemy",
       image: require("./assets/images/web-development.png"),
       imageAlt: "Web Development Icon",
       footerLink: [
@@ -394,8 +384,7 @@ const onlineCoursesSection = {
     },
     {
       title: "The Complete Android Oreo Developer Course",
-      subtitle:
-        "-Udemy",
+      subtitle: "-Udemy",
       image: require("./assets/images/android.png"),
       imageAlt: "Android Logo",
       footerLink: [
@@ -406,8 +395,8 @@ const onlineCoursesSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
-}
+  display: true
+};
 
 // Achievement Section
 // Include certificates, talks etc
@@ -461,21 +450,21 @@ const achievementSection = {
   achievementsCards2: [
     {
       title: "2nd Position, SpaceHack",
-      subtitle: "National-level hackathon where participants combine aerospace technology and computer science to create applications that demonstrate the best use of research and creativity. Conducted by Aerospace Society of DPS RK Puram. Sponsored by University of Arizona.",
+      subtitle:
+        "National-level hackathon where participants combine aerospace technology and computer science to create applications that demonstrate the best use of research and creativity. Conducted by Aerospace Society of DPS RK Puram. Sponsored by University of Arizona.",
       image: require("./assets/images/spacehack.png"),
       imageAlt: "SpaceHack",
       footerLink: [
         {
           name: "Certificate",
           url: "https://drive.google.com/file/d/1Tg-QpV5Ptu_GfKl5bN7QKIEb8Q2FCfMT/view?usp=drive_link"
-        },
+        }
       ]
-    }
-    ,
+    },
     {
       title: "Excellence in Co-Curricular (Top 3% of class)",
       subtitle:
-        "The 'Excellence in Co-Curricular' award celebrates the recipient's ability to balance academic excellence with active participation in co-curricular activities, highlighting their capacity to develop essential life skills, including leadership, time management, communication, and social responsibility. This recognition is a testament to their dedication to personal growth and their valuable contributions to the school community.",
+        "The 'Excellence in Co-Curricular' award celebrates the recipient's ability to balance academic excellence with active participation in co-curricular activities, highlighting their capacity to develop essential life skills, including leadership, time management, communication, and social responsibility.",
       image: require("./assets/images/jpis.jpeg"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -485,10 +474,10 @@ const achievementSection = {
         }
       ]
     },
-
     {
       title: "Participant, International Competition organized by CERN",
-      subtitle: "With 2000+ high school students participating in this highly competitive competition called Beamline for Schools, I researched on collision between two sub atomic particles using CERN’s hadron collider.",
+      subtitle:
+        "With 2000+ high school students participating in this highly competitive competition called Beamline for Schools, I researched on collision between two sub atomic particles using CERN's hadron collider.",
       image: require("./assets/images/beamlineforschools.png"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -512,8 +501,6 @@ const achievementSection = {
 
 const communityServiceSection = {
   title: emoji("Community Service"),
-  // subtitle:
-  //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards1: [
     {
@@ -558,10 +545,10 @@ const communityServiceSection = {
         }
       ]
     },
-
     {
       title: "Head Volunteer, Caring Hands By Pink",
-      subtitle: "Focusing on safety and happiness, I orchestrated the distribution of gifts, eco-crackers, and essential donations. This endeavor aimed to create an environment of positivity and well-being.",
+      subtitle:
+        "Focusing on safety and happiness, I orchestrated the distribution of gifts, eco-crackers, and essential donations. This endeavor aimed to create an environment of positivity and well-being.",
       image: require("./assets/images/caring_hands.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -603,10 +590,10 @@ const communityServiceSection = {
         }
       ]
     },
-
     {
       title: "Volunteer, Aanchal",
-      subtitle: "Joining hands with the Aanchal NGO, I rallied volunteers for a tree-planting drive. This initiative not only contributed to environmental conservation but also instilled a sense of responsibility towards our planet.",
+      subtitle:
+        "Joining hands with the Aanchal NGO, I rallied volunteers for a tree-planting drive. This initiative not only contributed to environmental conservation but also instilled a sense of responsibility towards our planet.",
       image: require("./assets/images/aanchal.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
@@ -622,14 +609,12 @@ const communityServiceSection = {
 
 const otherActivitiesSection = {
   title: emoji("Other Activities"),
-  // subtitle:
-  //   "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
       title: "Airbnb Property Manager",
       subtitle:
-        "I managed a property (my childhooh home) through Airbnb. I created and maintained property listings, interacted with guests before, during and after their stay to answer queries, provide information and address concerns, handle reservation requests and managed the calendar to ensure that the property is effectively rented out and that there are no double bookings. I managed over 500 successful bookings.",
+        "I managed a property (my childhood home) through Airbnb. I created and maintained property listings, interacted with guests before, during and after their stay to answer queries, provide information and address concerns, handle reservation requests and managed the calendar to ensure that the property is effectively rented out. I managed over 500 successful bookings.",
       image: require("./assets/images/airbnb.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
@@ -642,7 +627,7 @@ const otherActivitiesSection = {
     {
       title: "Community Content Creator",
       subtitle:
-        "As a Community Content Creator at Filmora Community Creations, I specialized in crafting dynamic videos for local audiences. These videos were designed to inform and entertain, resonating with our community. In addition, I extended my support by creating professional-grade videos for various community initiatives, amplifying their impact. It was immensely rewarding to see the positive influence these videos had on our community, both in terms of entertainment and the professional image they projected.",
+        "As a Community Content Creator at Filmora Community Creations, I specialized in crafting dynamic videos for local audiences. These videos were designed to inform and entertain, resonating with our community. In addition, I extended my support by creating professional-grade videos for various community initiatives, amplifying their impact.",
       image: require("./assets/images/filmora.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
@@ -652,40 +637,39 @@ const otherActivitiesSection = {
         }
       ]
     },
-
     {
-      title: "Vice Captain, Jayshree Periwal International School, ISSO National Team & Jayshree Periwal Sports League",
-      subtitle: "Vice Captain of the Basketball team at Jayshree Periwal International School and a key member of the ISSO National Team, I demonstrated exceptional leadership and game sense over 7 years. This resulted in our team winning 5 district championships and 2 State titles. Additionally, I earned 8 accolades in JPSL, showcasing my skill and dedication to the sport.",
+      title:
+        "Vice Captain, Jayshree Periwal International School, ISSO National Team & Jayshree Periwal Sports League",
+      subtitle:
+        "Vice Captain of the Basketball team at Jayshree Periwal International School and a key member of the ISSO National Team, I demonstrated exceptional leadership and game sense over 7 years. This resulted in our team winning 5 district championships and 2 State titles. Additionally, I earned 8 accolades in JPSL, showcasing my skill and dedication to the sport.",
       image: require("./assets/images/jpis.jpeg"),
       imageAlt: "PWA Logo",
       footerLink: [
-        { name: "Trophies", url: "https://drive.google.com/file/d/1lLyaa1sZDS-5hCmU9qTyCLxohxuQYxO9/view?usp=drive_link" }
+        {
+          name: "Trophies",
+          url: "https://drive.google.com/file/d/1lLyaa1sZDS-5hCmU9qTyCLxohxuQYxO9/view?usp=drive_link"
+        }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
 
-
 // Blogs Section
 
 const blogSection = {
   title: "Media Coverages",
-  // subtitle:
-  //   "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://drive.google.com/file/d/1Noml9ilNbQ5OIySQyWEhLnL005EPeryG/view?usp=sharing",
       title: "New Plus India, 19th November 2022",
-      description:
-        "Click to view"
+      description: "Click to view"
     },
     {
       url: "https://drive.google.com/file/d/1A5sgxngKmz8kNaLs3vASiu2NbOGS0rCs/view?usp=sharing",
       title: "Dainik Bhaskar, 20th November 2022",
-      description:
-        "Click to view"
+      description: "Click to view"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -695,10 +679,6 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  // subtitle: emoji(
-  //   "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  // ),
-
   talks: [
     {
       title: "Build Actions For Google Assistant",
@@ -726,10 +706,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  // subtitle:
-  // "I would love to connect with you .",
-  // number: "+92-0000000000",
-  email_address: "keshukeshavjain@gmail.com"
+  email_address: "kjain45@wisc.edu"
 };
 
 // Twitter Section
@@ -754,6 +731,7 @@ export {
   openSource,
   research,
   workExperience,
+  projectsSection,
   onlineCoursesSection,
   achievementSection,
   communityServiceSection,
